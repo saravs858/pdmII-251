@@ -74,7 +74,7 @@ Future<void> enviarEmail(String jsonData) async {
   final smtpServer = gmail('sara.silva09@aluno.ifce.edu.br', 'tlid roct dyaw ewip');
   
   final message = Message()
-    ..from = Address('seuemail@gmail.com', 'Sara Vieira')
+    ..from = Address('sara.silva09@aluno.ifce.edu.br', 'Sara Vieira')
     ..recipients.add('taveira@ifce.edu.br')
     ..subject = 'Dados do Sistema Acadêmico'
     ..text = 'Dados em formato JSON:\n\n$jsonData';
